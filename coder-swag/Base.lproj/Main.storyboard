@@ -21,11 +21,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JZ1-2K-lsF">
+                                <rect key="frame" x="0.0" y="69.5" width="414" height="738.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Wqa-Iv-OrX">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wqa-Iv-OrX" id="Qcf-wQ-TDc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="9up-UC-nF0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoodies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znk-oK-JGT">
+                                                    <rect key="frame" x="140" y="54.5" width="134" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="134" id="7xP-Wo-sFt"/>
+                                                        <constraint firstAttribute="height" constant="41" id="Aqi-fF-odw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9up-UC-nF0" firstAttribute="leading" secondItem="Qcf-wQ-TDc" secondAttribute="leading" id="0Bx-y8-nd9"/>
+                                                <constraint firstItem="znk-oK-JGT" firstAttribute="centerX" secondItem="Qcf-wQ-TDc" secondAttribute="centerX" id="1Mh-Ic-G6A"/>
+                                                <constraint firstItem="znk-oK-JGT" firstAttribute="centerY" secondItem="Qcf-wQ-TDc" secondAttribute="centerY" id="4bN-Zu-VtC"/>
+                                                <constraint firstItem="9up-UC-nF0" firstAttribute="top" secondItem="Qcf-wQ-TDc" secondAttribute="top" id="Bgh-nm-61X"/>
+                                                <constraint firstAttribute="trailing" secondItem="9up-UC-nF0" secondAttribute="trailing" id="Mbi-F1-iex"/>
+                                                <constraint firstAttribute="bottom" secondItem="9up-UC-nF0" secondAttribute="bottom" id="bcL-e4-Gqp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JZ1-2K-lsF" secondAttribute="bottom" id="0Ib-dN-Aob"/>
+                            <constraint firstItem="JZ1-2K-lsF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BHq-AO-52b"/>
                             <constraint firstItem="YHd-lS-Edf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HTm-3d-KwT"/>
                             <constraint firstItem="YHd-lS-Edf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="L3u-pz-k2A"/>
+                            <constraint firstItem="JZ1-2K-lsF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P9G-EI-tzY"/>
+                            <constraint firstItem="JZ1-2K-lsF" firstAttribute="top" secondItem="YHd-lS-Edf" secondAttribute="bottom" constant="16" id="Y0n-XV-3Fm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,4 +99,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="digital" width="1024" height="703"/>
+    </resources>
 </document>
